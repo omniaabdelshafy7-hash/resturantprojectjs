@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodBuzz Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./icons/fontawesome-free-7.0.1-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./animate.min.css">
+
+</head>
+<body>
+
+<!-- Splash Screen -->
+<div id="splashScreen">
+    <div class="loader"></div>
+</div>
+
+      
+    
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="left">
+            <span><i class="fa-solid fa-clock"></i> Sun-Fri: 9am-6pm Saturday Closed</span>
+            <span><i class="fa-solid fa-location-dot"></i> 60/A Soft Road 24th Street, NY 1200</span>
+            <span><i class="fa-solid fa-envelope"></i> Support@foodbuzz.com</span>
+        </div>
+        <div class="right">
+            <span>SHOP 1,000 | TEE GROUP HULTS</span>
+        </div>
+    </div>
+
+     <!-- NAV BAR  -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="./img/FoodBuzz - 11_30_2025 7-51-50 PM/01.png" alt="FoodBuzz Logo" width="70%">
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Pages <i class="fa-solid fa-chevron-down chevron"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Food Menu <i class="fa-solid fa-chevron-down chevron"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="food-menu.html#appetizers">Appetizers</a></li>
+                        <li><a href="food-menu.html#main-courses">Main Courses</a></li>
+                        <li><a href="food-menu.html#desserts">Desserts</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Reservation</a></li>
+                <li>
+                    <a href="#">Blog <i class="fa-solid fa-chevron-down chevron"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Blog Grid</a></li>
+                        <li><a href="#">Blog List</a></li>
+                        <li><a href="#">Single Post</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>0</span>
+                </div>
+               <!-- dark mode   -->
+               <div class="mode-toggle" id="modeToggle" style="cursor:pointer; font-size:18px;">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+     <!-- HERO SECTION  -->
+    <section class="hero">
+        <div class="hero-content">
+            <h4 class="welcome">Welcome To Our Foodbuzz</h4>
+            <h1 class="title">It's The Food You Love</h1>
+            <p class="subtitle">Best For Restaurant Wordpress Theme</p>
+            
+            <div class="hero-buttons">
+                <a href="#" class="btn order">ORDER NOW</a>
+                <a href="#" class="btn book">BOOK A TABLE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CART SIDEBAR ================= -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" id="closeCart">
+                <i class="fa-solid fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="cart-items">
+            <!-- Cart Item 1 -->
+            <div class="cart-item">
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80" alt="Burger">
+                <div class="item-details">
+                    <h4>Classic Burger</h4>
+                    <p>$12.99</p>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus"><i class="fa-solid fa-minus"></i></button>
+                        <span class="quantity">2</span>
+                        <button class="quantity-btn plus"><i class="fa-solid fa-plus"></i></button>
+                        <button class="remove-item"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cart Item 2 -->
+            <div class="cart-item">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=781&q=80" alt="Pizza">
+                <div class="item-details">
+                    <h4>Margherita Pizza</h4>
+                    <p>$15.99</p>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus"><i class="fa-solid fa-minus"></i></button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-btn plus"><i class="fa-solid fa-plus"></i></button>
+                        <button class="remove-item"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cart Item 3 -->
+            <div class="cart-item">
+                <img src="https://images.unsplash.com/photo-1559715745-e1b33a271c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Pasta">
+                <div class="item-details">
+                    <h4>Spaghetti Carbonara</h4>
+                    <p>$14.50</p>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus"><i class="fa-solid fa-minus"></i></button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-btn plus"><i class="fa-solid fa-plus"></i></button>
+                        <button class="remove-item"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cart-total">
+            <span>Total:</span>
+            <span>$56.47</span>
+        </div>
+        
+        <div class="cart-actions">
+            <a href="#" class="cart-btn checkout">Place Order</a>
+        </div>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+
+              <!-- SLIDER SECTION  -->
+    <div class="slider-container">
+        <h1>Restaurant With Special Foods</h1>
+        
+        <div class="slider">
+            <div><img src="./img/FoodBuzz - 11_30_2025 7-51-50 PM/two.png" alt="Healthy Salad"></div>
+            <div><img src="./img/FoodBuzz - 11_30_2025 7-51-50 PM/three.png" alt="Eggs with Toast"></div>
+            <div><img src="./img/FoodBuzz - 11_30_2025 7-51-50 PM/fife.png" alt="Burger with Fries"></div>
+            <div><img src="./img/FoodBuzz - 11_30_2025 7-51-50 PM/four.png" alt="Pizza"></div>
+        </div>
+    </div>
+
+
+         <!-- TIME & DATE SECTION  -->
+    <section class="time-date-section">
+        <div class="time-date-container">
+            <h2>Current Date & Time</h2>
+            <div class="time-date-display">
+                <!-- new time -->
+                <div class="time-section">
+                    <h3><i class="fa-solid fa-clock"></i> Live Time</h3>
+                    <div class="time-display">
+                        <div class="time-unit">
+                            <span id="hours" class="time-number">00</span>
+                            <span class="time-label">Hours</span>
+                        </div>
+                        <div class="time-separator">:</div>
+                        <div class="time-unit">
+                            <span id="minutes" class="time-number">00</span>
+                            <span class="time-label">Minutes</span>
+                        </div>
+                        <div class="time-separator">:</div>
+                        <div class="time-unit">
+                            <span id="seconds" class="time-number">00</span>
+                            <span class="time-label">Seconds</span>
+                        </div>
+                        <div class="time-period">
+                            <span id="period" class="period-text">AM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- new date -->
+                <div class="date-section">
+                    <h3><i class="fa-solid fa-calendar-days"></i> Today's Date</h3>
+                    <div class="date-display">
+                        <div class="date-item">
+                            <span class="date-number" id="day">00</span>
+                            <span class="date-label">Day</span>
+                        </div>
+                        <div class="date-separator">-</div>
+                        <div class="date-item">
+                            <span class="date-number" id="month">00</span>
+                            <span class="date-label">Month</span>
+                        </div>
+                        <div class="date-separator">-</div>
+                        <div class="date-item">
+                            <span class="date-number" id="year">0000</span>
+                            <span class="date-label">Year</span>
+                        </div>
+                    </div>
+                    
+                    <div class="weekday-display">
+                        <span id="weekday" class="weekday-text">Monday</span>
+                    </div>
+                </div>
+            
+        </div>
+    </section>
+
+     <!-- FOOD GALLERY OVERLAY SECTION  -->
+    <section class="food-gallery-overlay">
+        <div class="overlay-content">
+            <h2 class="wow animate__animated animate__fadeInDown">Our Signature Dishes</h2>
+            <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                Experience culinary excellence with our specially crafted dishes, prepared by master chefs 
+                using the finest ingredients.
+            </p>
+            
+            <div class="food-gallery">
+                <!-- Dish 1 -->
+                <div class="food-item wow animate__animated animate__zoomIn" data-wow-delay="0.3s">
+                    <div class="food-image">
+                        <img src="./img/FoodBuzz - 11_30_2025 7-51-50 PM/02.jpg" alt="Cream Chicken Enchiladas">
+                        <div class="food-overlay">
+                            <div class="price">$24.99</div>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="food-info">
+                        <h3>Cream Chicken Enchiladas</h3>
+                        <p class="description">Tender chicken wrapped in soft tortillas, smothered in our signature creamy sauce with melted cheese.</p>
+                        <div class="food-meta">
+                            <span><i class="fas fa-clock"></i> 25 mins</span>
+                            <span><i class="fas fa-fire"></i> 450 cal</span>
+                            <span><i class="fas fa-star"></i> Chef's Pick</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dish 2 -->
+                <div class="food-item wow animate__animated animate__zoomIn" data-wow-delay="0.4s">
+                    <div class="food-image">
+                        <img src="./img/FoodBuzz - 11_30_2025 7-51-50 PM/01.jpg" alt="Grilled Salmon">
+                        <div class="food-overlay">
+                            <div class="price">$29.99</div>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="food-info">
+                        <h3>Grilled Salmon</h3>
+                        <p class="description">Fresh Atlantic salmon grilled to perfection with lemon herb butter, served with seasonal vegetables.</p>
+                        <div class="food-meta">
+                            <span><i class="fas fa-clock"></i> 20 mins</span>
+                            <span><i class="fas fa-fire"></i> 380 cal</span>
+                            <span><i class="fas fa-star"></i> Healthy Choice</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dish 3 -->
+                <div class="food-item wow animate__animated animate__zoomIn" data-wow-delay="0.5s">
+                    <div class="food-image">
+                        <img src="./img/FoodBuzz - 11_30_2025 7-51-50 PM/05.jpg" alt="Premium Beef Burger">
+                        <div class="food-overlay">
+                            <div class="price">$18.99</div>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="food-info">
+                        <h3>Premium Beef Burger</h3>
+                        <p class="description">100% Angus beef patty with cheddar cheese, crispy bacon, fresh lettuce, and special burger sauce.</p>
+                        <div class="food-meta">
+                            <span><i class="fas fa-clock"></i> 15 mins</span>
+                            <span><i class="fas fa-fire"></i> 620 cal</span>
+                            <span><i class="fas fa-star"></i> Best Seller</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chef-note wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
+                <div class="chef-avatar">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <div class="chef-message">
+                    <h4><i class="fas fa-quote-left"></i> From Our Kitchen</h4>
+                    <p>"Every dish is crafted with passion and attention to detail. We source the freshest ingredients daily to ensure exceptional quality and taste."</p>
+                    <p class="chef-signature">- FoodBuzz Culinary Team</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= PRE-FOOTER BANNER ================= -->
+    <section class="pre-footer-banner">
+        <div class="left-box">
+            <img src="./img/FoodBuzz - 11_30_2025 7-51-50 PM/02 (2).png" alt="FoodBuzz" class="footer-logo">
+        </div>
+
+        <div class="right-box">
+            <h2>Work With Best Restaurant Theme</h2>
+            <button class="order-btn">ORDER NOW</button>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-bg"></div>
+        <div class="footer-container">
+            <div class="footer-box contact-info">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-home"></i> Suite 02 Level Tropical Center</li>
+                    <li><i class="fas fa-phone"></i> +880 1234 567890, 025984712</li>
+                    <li><i class="fas fa-globe"></i> www.foodbuzz@gmail.com</li>
+                    <li><i class="fas fa-envelope"></i> support@codexcoder.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-box opening-hours">
+                <h3>Opening Hours</h3>
+                <ul>
+                    <li><i class="far fa-clock"></i> Saturday <span>06:00 am – 08:00 pm</span></li>
+                    <li><i class="far fa-clock"></i> Sunday <span>09:00 am – 02:00 pm</span></li>
+                    <li><i class="far fa-clock"></i> Monday <span>07:00 am – 09:00 pm</span></li>
+                    <li><i class="far fa-clock"></i> Tuesday <span>02:00 am – 06:00 pm</span></li>
+                </ul>
+            </div>
+
+            <div class="footer-box subscribe">
+                <h3>Subscribe Newsletter</h3>
+                <p>Sign Up For Our Latest News & Articles. We Wont Give You Spam Mails.</p>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Your Email">
+                    <button>SUBSCRIBE!</button>
+                </div>
+                <div class="social-links">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-behance"></i>
+                    <i class="fab fa-dribbble"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2020 <span>FoodBuzz</span> Designed by <span>Labartisan</span></p>
+            <ul class="footer-links">
+                <li>Home</li>
+                <li>Food Menu</li>
+                <li>Pages</li>
+                <li>Blog</li>
+                <li>Shop</li>
+                <li>Elements</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </footer>
+
+
+ <!-- ================= SCROLL ARROW ================= -->
+    <div class="scroll-arrow" id="scrollArrow">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 4l-10 10h6v6h8v-6h6z"/>
+        </svg>
+    </div>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="./jec.js"></script>
+    <script src="./WOW-master/dist/wow.min.js"></script>
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script src="cart.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

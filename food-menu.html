@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodBuzz</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="./icons/fontawesome-free-7.0.1-web/css/all.min.css">
+</head>
+<body>
+    
+<!-- Splash Screen -->
+<div id="splashScreen">
+    <div class="loader"></div>
+</div>
+
+  <!-- TOP BAR  -->
+ <div class="top-bar">
+    <div class="left">
+        <span><i class="fa-solid fa-clock"></i> Sun-Fri: 9am-6pm Saturday Closed</span>
+        <span><i class="fa-solid fa-location-dot"></i> 60/A Soft Road 24th Street, NY 1200</span>
+        <span><i class="fa-solid fa-envelope"></i> Support@foodbuzz.com</span>
+    </div>
+    <div class="right">
+        <span>SHOP 1,000 | TEE GROUP HULTS</span>
+    </div>
+ </div>
+
+ <!-- NAV BAR  -->
+ <header class="navbar">
+    <div class="container">
+        <div class="logo">
+            <img src="./img/FoodBuzz - 11_30_2025 7-51-50 PM/01.png" alt="FoodBuzz Logo" width="70%">
+        </div>
+        <ul class="menu">
+            <li><a href="index.html#Home">Home</a></li>
+            <li>
+                <a href="#">Pages <i class="fa-solid fa-chevron-down chevron"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Food Menu <i class="fa-solid fa-chevron-down chevron"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#appetizers">Appetizers</a></li>
+                    <li><a href="#main-courses">Main Courses</a></li>
+                    <li><a href="#desserts">Desserts</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Reservation</a></li>
+            <li>
+                <a href="#">Blog <i class="fa-solid fa-chevron-down chevron"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">Blog Grid</a></li>
+                    <li><a href="#">Blog List</a></li>
+                    <li><a href="#">Single Post</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="cart-icon" id="cartIcon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>0</span>
+            </div>
+        </div>
+    <div class="mode-toggle" id="modeToggle" style="cursor:pointer; font-size:18px;">
+        <i class="fa-solid fa-moon"></i>
+    </div>
+     </div>
+    </div>
+ </header>
+ 
+  <div class="header">
+    
+  </div>
+
+  <div class="banner">
+    <img src="./img/FoodBuzz - 11_30_2025 7-51-50 PM/cover.png" alt="Best Breakfast" />
+  </div>
+   
+
+ <div class="products" id="products"></div>
+
+<div class="load-more">
+    <button onclick="loadMore()">LOAD MORE</button>
+</div>
+
+
+ <!-- CART SIDEBAR  -->
+ <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+        <h3>Shopping Cart</h3>
+        <button class="close-cart" id="closeCart">
+            <i class="fa-solid fa-times"></i>
+        </button>
+    </div>
+    <div class="cart-items">
+       
+    </div>
+    <div class="cart-total">
+        <span>Total:</span>
+        <span>$0.00</span>
+    </div>
+    <div class="cart-actions">
+        <a href="#" class="cart-btn checkout"> Placeorder</a>
+    </div>
+ </div>
+
+ <div class="overlay" id="overlay"></div>
+
+
+
+<section class="pre-footer-banner">
+  <div class="left-box">
+    <img src="./img/FoodBuzz - 11_30_2025 7-51-50 PM/02 (2).png" alt="FoodBuzz" class="footer-logo">
+  </div>
+
+  <div class="right-box">
+    <h2>Work With Best Resturant Theme</h2>
+    <button class="order-btn">ORDER NOW</button>
+  </div>
+</section>
+
+
+<!-- Footer Section Start -->
+<footer class="footer">
+    <div class="footer-bg"></div>
+    <div class="footer-container">
+        <div class="footer-box contact-info">
+            <h3>Contact Info</h3>
+            <ul>
+                <li><i class="fas fa-home"></i> Suite 02 Level Tropical Center</li>
+                <li><i class="fas fa-phone"></i> +880 1234 567890, 025984712</li>
+                <li><i class="fas fa-globe"></i> www.foodbuzz@gmail.com</li>
+                <li><i class="fas fa-envelope"></i> support@codexcoder.com</li>
+            </ul>
+        </div>
+
+        <div class="footer-box opening-hours">
+            <h3>Opening Hours</h3>
+            <ul>
+                <li><i class="far fa-clock"></i> Saturday <span>06:00 am – 08:00 pm</span></li>
+                <li><i class="far fa-clock"></i> Sunday <span>09:00 am – 02:00 pm</span></li>
+                <li><i class="far fa-clock"></i> Monday <span>07:00 am – 09:00 pm</span></li>
+                <li><i class="far fa-clock"></i> Tuesday <span>02:00 am – 06:00 pm</span></li>
+            </ul>
+        </div>
+
+        <div class="footer-box subscribe">
+            <h3>Subscribe Newsletter</h3>
+            <p>Sign Up For Our Latest News & Articles. We Wont Give You Spam Mails.</p>
+            <div class="subscribe-form">
+                <input type="email" placeholder="Your Email">
+                <button>SUBSCRIBE!</button>
+            </div>
+            <div class="social-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-behance"></i>
+                <i class="fab fa-dribbble"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2020 <span>FoodBuzz</span> Designed by <span>Labartisan</span></p>
+        <ul class="footer-links">
+            <li>Home</li>
+            <li>Food Menu</li>
+            <li>Pages</li>
+            <li>Blog</li>
+            <li>Shop</li>
+            <li>Elements</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+  <div class="scroll-arrow" id="scrollArrow">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 4l-10 10h6v6h8v-6h6z"/>
+        </svg>
+    </div>
+
+ <!-- SCRIPTS  -->
+ <script src="cart.js"></script>
+ <script src="jec.js"></script>
+<script src="main.js"></script>
+<script src="Foodbuzz.js"></script>
+
+</body>
+</html>
